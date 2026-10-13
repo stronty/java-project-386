@@ -31,3 +31,17 @@ Hexlet project: calendar/booking service. pnpm workspace with `backend/` (Fastif
 - Do not delete or edit `.github/workflows/hexlet-check.yml`; the grading harness depends on it.
 - release-please runs on pushes to `main` and builds the changelog from Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`), so use them.
 - Do not commit secrets.
+
+## Agent skills
+
+### Issue tracker
+
+Issues are tracked in GitHub Issues (via the `gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: root `GLOSSARY.md` + `docs/adr/`. See `docs/agents/domain.md`.
