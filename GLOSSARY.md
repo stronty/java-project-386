@@ -21,8 +21,8 @@ _Avoid_: Time, Time slot, Window, Opening
 A guest's reservation of exactly one slot for exactly one event type, captured with the guest's
 name and email. A booking consumes one slot and one slot only, whatever the event type's duration:
 duration describes the meeting, not the footprint it reserves. A booking has no lifecycle beyond
-being made — it is never edited or cancelled.
-_Avoid_: Reservation, Appointment, Meeting, Event, Запись, Бронь, Событие
+being made — it is never edited or cancelled. Russian UI copy calls this a «запись».
+_Avoid_: Reservation, Appointment, Meeting, Event, Бронь, Событие
 
 **Owner**:
 The single preset profile that creates event types and browses all bookings. The owner is
