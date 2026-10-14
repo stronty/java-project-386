@@ -52,6 +52,10 @@ They are recorded here so they have one home before the API contract carries the
 - **Event type description**: at most 1000 characters.
 - **Event type duration**: a whole number of minutes from 1 to 480. It need not be a multiple of 30,
   because it does not determine how many slots a booking takes.
+- **Event type id**: supplied by the owner rather than assigned by the server. A lowercase slug of
+  letters, digits and hyphens, 1–50 characters. It is the primary key, it appears in the
+  `/book/:eventTypeId` URL, and because the owner supplies it, a duplicate is a conflict rather than
+  a silent overwrite.
 - **Booking date**: a real calendar date inside the booking window.
 - **Slot start**: a half hour from 09:00 to 17:30 whose time has not already passed.
 
