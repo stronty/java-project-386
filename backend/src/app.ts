@@ -17,7 +17,7 @@ export function buildApp(options: AppOptions = {}) {
       if (request.method === 'GET' && !request.url.startsWith('/api')) {
         return reply.sendFile('index.html');
       }
-      return reply.code(404).send({ message: 'Not found' });
+      return reply.code(404).send({ message: 'Не найдено' });
     });
   }
 
