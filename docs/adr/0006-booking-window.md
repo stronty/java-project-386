@@ -1,5 +1,8 @@
 # The booking window is today plus 13 days, and past slots are never offered
 
+_Partly amended by ADR 0011, which replaces the query consequence below. The window definition
+itself — today plus 13 days, never offering a passed slot — still stands._
+
 We decided that the bookable window is today and the following thirteen days — fourteen days in
 total. Separately, the server never offers a slot whose start time has already passed, so the usable
 part of today shrinks as the day goes on.
