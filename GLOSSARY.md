@@ -57,6 +57,13 @@ They are recorded here so they have one home before the API contract carries the
   `/book/:eventTypeId` URL, and because the owner supplies it, a duplicate is a conflict rather than
   a silent overwrite.
 - **Booking date**: a real calendar date inside the booking window.
+- **Booking id**: assigned by the server at creation, never supplied by the guest. Read-only in the
+  contract: present in responses, absent from anything the guest submits. It identifies a booking for
+  the bookings table only; whether a slot is free is decided by the unique index on
+  `(date, startMinutes)`, not by any id.
+- **Booking creation time**: set by the server when the booking is made, and read-only. It records
+  when a booking arrived, which is not the same question as when its slot is — an owner's list sorted
+  by slot cannot otherwise show that a booking for next week was made three days ago.
 - **Slot start**: a half hour from 09:00 to 17:30 whose time has not already passed.
 
 ## Not in this domain
